@@ -3,6 +3,7 @@
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import { AvatarImage } from "@radix-ui/react-avatar";
 import { LogOutIcon, Moon, SettingsIcon, Sun, User } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -23,9 +24,7 @@ export const Header = () => {
   const { setTheme } = useTheme();
   return (
     <nav className=" text-white p-4 item-center  flex justify-between">
-      <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Click Me
-      </Button>
+      <SidebarTrigger className="text-black dark:text-white hover:cursor-pointer" />
       <div className="flex gap-8 items-center">
 
 

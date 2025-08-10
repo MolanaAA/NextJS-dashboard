@@ -5,7 +5,7 @@ import { Header } from "./components/header";
 import { SideBar } from "./components/sidebar";
 import { Sidebar } from "lucide-react";
 import { ThemeProvider } from "next-themes";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  `}
       >
 
         <ThemeProvider
